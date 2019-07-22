@@ -1,9 +1,11 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using System;
+using MongoDbRepositoryWithCSharpDriver.Data.Metadata;
 
 namespace MongoDbRepositoryWithCSharpDriver.Data.Entities
 {
+    [MongoCollection("products")]
     public class ProductEntity
     {
         [BsonId]
